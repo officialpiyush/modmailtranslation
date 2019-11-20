@@ -8,11 +8,16 @@ requirements = []
 with open('requirements.txt') as f:
     requirements = f.read().splitlines()
 
+with open('README.md', encoding='utf8') as f:
+    long_description = f.read()
+
 setup(
     name="modmailtranslation",
     version=metadata["version"],
     description="A translator utility package for modmail-plugins",
+    long_description=long_description,
     packages=find_packages(),
+    license="GPLv3",
     url="https://github.com/officialpiyush/modmailtranslation",
     author="Piyush Bhangale",
     author_email="bhangalepiyush@gmail.com",
