@@ -63,6 +63,14 @@ class Translator:
         await self._request_file()
         return
 
+    def get_languages(self):
+        """
+        Retrieve all supported languages
+
+        :return:
+        """
+        return self._language_file_data["languages"]
+
     def get(self, key, language=None):
         """
         Get the language string from the language file.

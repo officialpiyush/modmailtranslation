@@ -1,7 +1,7 @@
 from .Translator import Translator
-from .errors import *
+from .errors.KeyNotFoundError import KeyNotFoundError
 
-__version__ = "v1.0.1"
+__version__ = "v1.1.0"
 __author__ = "Piyush Bhangale"
 __github__ = "https://github.com/officialpiyush/modmailtranslation"
 __license__ = "GNU General Public License v3 (GPLv3)"
